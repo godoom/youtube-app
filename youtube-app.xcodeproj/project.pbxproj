@@ -19,6 +19,8 @@
 		DD3593C126DC828D00CC9645 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3593C026DC828D00CC9645 /* Video.swift */; };
 		DD3593C326DC82D700CC9645 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3593C226DC82D700CC9645 /* Model.swift */; };
 		DD3593C526DC8BBD00CC9645 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3593C426DC8BBD00CC9645 /* Response.swift */; };
+		DD3593C726DD488C00CC9645 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3593C626DD488C00CC9645 /* VideoTableViewCell.swift */; };
+		DD3593CE26DD50B500CC9645 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3593CD26DD50B500CC9645 /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		DD3593C026DC828D00CC9645 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		DD3593C226DC82D700CC9645 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DD3593C426DC8BBD00CC9645 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		DD3593C626DD488C00CC9645 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		DD3593CD26DD50B500CC9645 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,15 +113,13 @@
 			children = (
 				DD35938E26DC74D000CC9645 /* AppDelegate.swift */,
 				DD35939026DC74D000CC9645 /* SceneDelegate.swift */,
-				DD35939226DC74D000CC9645 /* ViewController.swift */,
-				DD35939426DC74D000CC9645 /* Main.storyboard */,
+				DD3593CC26DD48D600CC9645 /* Views */,
+				DD3593CB26DD48C600CC9645 /* View Controllers */,
+				DD3593CA26DD48BC00CC9645 /* Models */,
+				DD3593C926DD48AF00CC9645 /* Storyboards */,
+				DD3593C826DD48A200CC9645 /* Helpers */,
 				DD35939726DC74D100CC9645 /* Assets.xcassets */,
-				DD35939926DC74D100CC9645 /* LaunchScreen.storyboard */,
 				DD35939C26DC74D100CC9645 /* Info.plist */,
-				DD3593BE26DC7DB600CC9645 /* Constants.swift */,
-				DD3593C026DC828D00CC9645 /* Video.swift */,
-				DD3593C226DC82D700CC9645 /* Model.swift */,
-				DD3593C426DC8BBD00CC9645 /* Response.swift */,
 			);
 			path = "youtube-app";
 			sourceTree = "<group>";
@@ -138,6 +140,50 @@
 				DD3593B226DC74D100CC9645 /* Info.plist */,
 			);
 			path = "youtube-appUITests";
+			sourceTree = "<group>";
+		};
+		DD3593C826DD48A200CC9645 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD3593BE26DC7DB600CC9645 /* Constants.swift */,
+				DD3593CD26DD50B500CC9645 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DD3593C926DD48AF00CC9645 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD35939426DC74D000CC9645 /* Main.storyboard */,
+				DD35939926DC74D100CC9645 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD3593CA26DD48BC00CC9645 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD3593C226DC82D700CC9645 /* Model.swift */,
+				DD3593C026DC828D00CC9645 /* Video.swift */,
+				DD3593C426DC8BBD00CC9645 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD3593CB26DD48C600CC9645 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD35939226DC74D000CC9645 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD3593CC26DD48D600CC9645 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD3593C626DD488C00CC9645 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD35939326DC74D000CC9645 /* ViewController.swift in Sources */,
+				DD3593CE26DD50B500CC9645 /* CacheManager.swift in Sources */,
 				DD35938F26DC74D000CC9645 /* AppDelegate.swift in Sources */,
 				DD35939126DC74D000CC9645 /* SceneDelegate.swift in Sources */,
 				DD3593C326DC82D700CC9645 /* Model.swift in Sources */,
 				DD3593BF26DC7DB600CC9645 /* Constants.swift in Sources */,
+				DD3593C726DD488C00CC9645 /* VideoTableViewCell.swift in Sources */,
 				DD3593C126DC828D00CC9645 /* Video.swift in Sources */,
 				DD3593C526DC8BBD00CC9645 /* Response.swift in Sources */,
 			);
